@@ -2,66 +2,116 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Al-Farabi Gold Tea</title>
+  <title>Farabi Tea</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
-      background: url("1.jpg") no-repeat center center fixed;
+      font-family: 'Georgia', serif;
+      background: url('1.jpg') no-repeat center center fixed;
       background-size: cover;
+      color: #fff;
+      text-align: center;
     }
-    .overlay {
-      background: rgba(0, 0, 0, 0.6); /* затемнение для читаемости текста */
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 40px;
+    header {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
     }
-    h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+    nav a {
+      margin: 0 15px;
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
     }
-    h2 {
-      font-size: 32px;
-      margin-top: 40px;
-      margin-bottom: 20px;
+    section {
+      padding: 60px 20px;
+      background: rgba(0,0,0,0.5);
+      margin: 20px;
+      border-radius: 15px;
     }
-    p {
-      max-width: 800px;
-      font-size: 20px;
-      line-height: 1.6;
+    h1, h2 {
+      color: #ffd700;
     }
-    footer {
-      margin-top: 50px;
-      font-size: 14px;
-      opacity: 0.8;
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: #ffd700;
+      color: #000;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+    .social-icons {
+      margin-top: 20px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 30px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .products img {
+      width: 300px;
+      margin: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.8);
     }
   </style>
+  <!-- подключаем иконки -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="overlay">
-    <h1>Добро пожаловать в Al-Farabi Gold Tea</h1>
+  <header>
+    <h1>Farabi Tea</h1>
+    <nav>
+      <a href="#home">Главная</a>
+      <a href="#about">О компании</a>
+      <a href="#who">Кто мы</a>
+      <a href="#products">Продукция</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Натуральный чай из Индии и Кении</h2>
+    <p>Каждая чашка — аромат истории, гармонии и вдохновения.</p>
+    <a href="https://wa.me/77001234567" class="btn">Попробовать / Заказать</a>
+  </section>
+
+  <section id="about">
     <h2>О компании</h2>
     <p>
       Мы — не просто производственная компания из сердца Алматы.  
       Мы — мастера чайного искусства, вдохновлённые древними традициями Востока.  
-      Под своими брендами — <b>Al Farabi, Farabi Gold, Farabi Packet и Farabi Leaf</b> —  
-      мы бережно создаём гранулированный, пакетированный и крупнолистовой чай,  
-      словно вплетая в каждую чашку аромат истории и мудрости.
+      Под своими брендами — Al Farabi, Farabi Gold, Farabi Packet и Farabi Leaf — мы бережно создаём гранулированный, пакетированный и крупнолистовой чай, словно вплетая в каждую чашку аромат истории и мудрости.  
+      Наша цель — не только производить, но и дарить людям напиток высочайшего качества, чтобы каждая глотка приносила наслаждение, умиротворение и прикосновение к истинной культуре чая.
     </p>
+  </section>
+
+  <section id="who">
+    <h2>Кто мы такие</h2>
     <p>
-      Наша цель — не только производить, но и дарить людям напиток высочайшего качества,  
-      чтобы каждая глотка приносила наслаждение, умиротворение и прикосновение  
-      к истинной культуре чая.
+      FoodProductCo — молодая производственная компания, выросшая из земли Алматы, где традиции переплетаются с дыханием новых времён.  
+      Мы словно ремесленники Востока, ткём ткань качества и доверия, вплетая в неё опыт предков и силу современных технологий.  
+      Наша цель — не просто создавать продукцию, а предлагать решения, которые становятся частью жизни наших клиентов, облегчая её и придавая ей вкус гармонии.
     </p>
-    <footer>
-      © 2025 Al-Farabi Gold Tea
-    </footer>
-  </div>
+  </section>
+
+  <section id="products">
+    <h2>Продукция</h2>
+    <div class="products">
+      <img src="2.png" alt="Farabi Gold Кенийский чай">
+      <img src="3.png" alt="Farabi Gold Чай">
+    </div>
+  </section>
+
+  <section id="contacts">
+    <h2>Контакты</h2>
+    <p>Свяжитесь с нами и откройте мир настоящего чая.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/reel/DCW7YZTsbjf/?igsh=MTdxMXMzd2R5c2tkeg==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://vm.tiktok.com/ZMASH46Nx/" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </section>
 </body>
 </html>
